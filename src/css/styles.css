@@ -27,12 +27,28 @@ ul {
 }
 
 a {
+  position: relative;
   color: #1E266D;
   font-size: 1.6rem;
   text-decoration: none;
+  padding: 0 0.1rem;
 }
 a:hover {
   color: #45588080;
+}
+a::after {
+  content: "";
+  position: absolute;
+  background-color: #3751FF;
+  height: 0.3rem;
+  width: 0;
+  left: 0;
+  bottom: -0.8rem;
+  transition: 0.3s ease-in;
+}
+a:hover::after {
+  color: #45588080;
+  width: 100%;
 }
 
 p, span {

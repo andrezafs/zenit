@@ -12,12 +12,28 @@ ul {
     list-style: none;
 }
 a {
+    position: relative;
     color: $color-texts;
     font-size: 1.6rem;
     text-decoration: none;
- 
+    padding: 0 .1rem;
+
     &:hover {
         color: $color-span;
+    }
+        &::after {
+            content: "";
+            position:absolute;
+            background-color: $button-blue;
+            height: .3rem;
+            width: 0;
+            left: 0;
+            bottom: -.8rem;
+            transition: 0.3s ease-in;
+        }
+        &:hover::after {
+        color: $color-span;
+        width: 100%;
     }
 }
 p, span {
