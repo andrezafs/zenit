@@ -31,3 +31,6 @@ const bg = ScrollReveal({
   });
   rigth.reveal(".about-grid", { delay: 50 });
   
+
+
+
