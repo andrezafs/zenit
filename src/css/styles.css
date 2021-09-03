@@ -157,11 +157,6 @@ button:hover {
   color: #3751FF;
 }
 
-@media screen and (max-width: 999px) {
-  body {
-    overflow-x: hidden;
-  }
-}
 #hero {
   display: flex;
   text-align: center;
@@ -396,7 +391,6 @@ button:hover {
 }
 #cta .cta-container span {
   color: #FFFFFF;
-  text-align: right;
 }
 
 #footer {
@@ -443,6 +437,10 @@ button:hover {
 @media (max-width: 900px) {
   #footer .footer-container {
     padding: 0 2rem;
+  }
+  #footer .footer-container .terms {
+    display: flex;
+    flex-direction: column;
   }
 }
 

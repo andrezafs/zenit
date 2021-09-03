@@ -26,11 +26,8 @@ button {
     @include btn-dark(btn-nav);
 }
 
-@media screen and (max-width: 999px) {
-    body {
-        overflow-x: hidden;
-    }
-}
+
+
 
 #hero {
     display: flex;
@@ -201,8 +198,8 @@ button {
             margin-bottom: 1.6rem;
            
             &:hover {
-         
-                @include hover (ligth);
+
+                @include hover ( dark);
             }
             p {
                 line-height: 3.24rem;
@@ -251,9 +248,10 @@ button {
         }
         span {
             color: $color-white;
-            text-align: right;
+            // text-align: right;
         }
     }
+ 
 }
 
 #footer {
@@ -306,6 +304,11 @@ button {
     @media (max-width: 900px) {
         .footer-container {
             padding: 0 2rem;
+
+            .terms {
+                display: flex;
+                flex-direction: column;
+            }
         }
     }
 }
