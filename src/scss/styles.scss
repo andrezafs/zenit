@@ -15,19 +15,13 @@ nav {
         align-items: center;
         a {
             margin: 0 3rem;
-           
-    
         }
     }
 }
 
-
 button {
     @include btn-dark(btn-nav);
 }
-
-
-
 
 #hero {
     display: flex;
@@ -183,7 +177,6 @@ button {
         flex-wrap: wrap;
         padding: 5.6rem 0;
 
-    
         &-box {
             cursor: pointer;
             display: flex;
@@ -196,10 +189,9 @@ button {
             border: $border;
             border-radius: 0.4rem;
             margin-bottom: 1.6rem;
-           
-            &:hover {
 
-                @include hover ( dark);
+            &:hover {
+                @include hover(dark);
             }
             p {
                 line-height: 3.24rem;
@@ -209,13 +201,11 @@ button {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                
+
                 h3 {
                     margin-top: 2.3rem;
                 }
             }
-
-           
         }
     }
 }
@@ -251,7 +241,6 @@ button {
             // text-align: right;
         }
     }
- 
 }
 
 #footer {
@@ -264,7 +253,7 @@ button {
         margin-top: 3.42rem;
         line-height: 2.6rem;
     }
-   
+
     .footer-container {
         display: flex;
         flex-direction: column;
@@ -282,7 +271,6 @@ button {
     }
 
     .column-links {
-      
         &-sociais {
             margin-top: 3.2rem;
             img {

@@ -1,6 +1,8 @@
 @import "variables";
 
-*, *::before, *::after{
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -16,27 +18,28 @@ a {
     color: $color-texts;
     font-size: 1.6rem;
     text-decoration: none;
-    padding: 0 .1rem;
+    padding: 0 0.1rem;
 
     &:hover {
         color: $color-span;
     }
-        &::after {
-            content: "";
-            position:absolute;
-            background-color: $button-blue;
-            height: .3rem;
-            width: 0;
-            left: 0;
-            bottom: -.8rem;
-            transition: 0.3s ease-in;
-        }
-        &:hover::after {
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: $button-blue;
+        height: 0.3rem;
+        width: 0;
+        left: 0;
+        bottom: -0.8rem;
+        transition: 0.3s ease-in;
+    }
+    &:hover::after {
         color: $color-span;
         width: 100%;
     }
 }
-p, span {
+p,
+span {
     font-size: 1.6rem;
     font-weight: 400;
 }
@@ -63,7 +66,7 @@ h3 {
 // }
 
 button {
-    border: .1rem solid transparent;
+    border: 0.1rem solid transparent;
     font-size: 1.6rem;
     font-weight: 400;
     border-radius: 100rem;
@@ -73,7 +76,7 @@ button {
 .maxWidth {
     max-width: 139rem;
     margin: 0 auto;
-   
+
     // align-items: center;
 }
 
@@ -94,5 +97,3 @@ button {
         font-size: 1.4rem;
     }
 }
-
-
