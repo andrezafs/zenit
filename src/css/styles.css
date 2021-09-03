@@ -136,9 +136,9 @@ button {
 button:hover {
   transform: scale(1.1);
   transition: all 0.5s;
+  border: 0.1rem solid #3751FF;
   background-color: transparent;
   color: #3751FF;
-  border: 0.1rem solid #3751FF;
 }
 
 @media screen and (max-width: 999px) {
@@ -173,9 +173,9 @@ button:hover {
 #hero .buttons #blue:hover {
   transform: scale(1.1);
   transition: all 0.5s;
+  border: 0.1rem solid #3751FF;
   background-color: transparent;
   color: #3751FF;
-  border: 0.1rem solid #3751FF;
 }
 #hero .buttons #white {
   background-color: #FFFFFF;
@@ -186,8 +186,9 @@ button:hover {
 #hero .buttons #white:hover {
   transform: scale(1.1);
   transition: all 0.5s;
-  background-color: transparent;
   border: 0.1rem solid #3751FF;
+  background-color: transparent;
+  color: #FFFFFF;
 }
 
 #logos {
@@ -296,9 +297,9 @@ button:hover {
 #portifolio button:hover {
   transform: scale(1.1);
   transition: all 0.5s;
+  border: 0.1rem solid #3751FF;
   background-color: transparent;
   color: #3751FF;
-  border: 0.1rem solid #3751FF;
 }
 
 #coments {
@@ -370,12 +371,9 @@ button:hover {
 #cta .cta-container .btn #btn-cta:hover {
   transform: scale(1.1);
   transition: all 0.5s;
-  background-color: transparent;
   border: 0.1rem solid #3751FF;
-}
-#cta .cta-container .btn #btn-cta:hover {
+  background-color: transparent;
   color: #FFFFFF;
-  border: 0.1rem solid #FFFFFF;
 }
 #cta .cta-container span {
   color: #FFFFFF;
