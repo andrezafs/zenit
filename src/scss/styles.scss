@@ -186,6 +186,7 @@ button {
         flex-wrap: wrap;
         padding: 5.6rem 0;
 
+    
         &-box {
             cursor: pointer;
             display: flex;
@@ -198,9 +199,10 @@ button {
             border: $border;
             border-radius: 0.4rem;
             margin-bottom: 1.6rem;
-
+           
             &:hover {
-                @include hover(ligth);
+         
+                @include hover (ligth);
             }
             p {
                 line-height: 3.24rem;
@@ -210,10 +212,13 @@ button {
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
+                
                 h3 {
                     margin-top: 2.3rem;
                 }
             }
+
+           
         }
     }
 }

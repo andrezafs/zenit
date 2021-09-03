@@ -39,19 +39,21 @@ $border: .1rem solid $border-perfil;
 
 
   @mixin hover ($var) {
+
     transform: scale(1.1);
     transition: all 0.5s;
     border: .1rem solid $button-blue;
     background-color: transparent;
-    @if $var == dark {
     color: $button-blue;
-     
+    @if $var == dark {
+
     }
     @else if $var == ligth {
-      color: $color-white;
+    
     }
     @else if $var == ligth-cta {
-      border: .1rem solid $colo;
+      color: $color-white;
+      border: .1rem solid $color-white;
     }
   }
   
@@ -74,9 +76,7 @@ $border: .1rem solid $border-perfil;
     background-color: $color-white;
     color: $color-texts;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
-    &:hover {
-     @include hover(ligth);
-    }
+ 
    
     @if $var == btnclear {
         padding:1.54rem 3.5rem ;
@@ -84,6 +84,9 @@ $border: .1rem solid $border-perfil;
     }
     @else if $var == btn-cta {
         padding: 1.35rem 2.95rem;
+        &:hover {
+          @include hover(ligth-cta);
+         }
      
     }
 }
