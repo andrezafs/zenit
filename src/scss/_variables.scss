@@ -1,0 +1,63 @@
+//COLORS
+
+$background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 100%);
+$bg-port: #FFF9EA;
+$bg-cta:#3751FF;
+$button-blue: #3751FF;
+$color-texts: #1E266D;
+$color-span:#45588080;
+$color-white: #FFFFFF;
+$color-footer: rgba(69, 88, 128, 0.5);
+$border-perfil:  rgba(69, 88, 128, 0.2);
+$border: .1rem solid $border-perfil;
+
+// FONTES
+
+@font-face {
+    font-family: "Montserat";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Montserrat-Regular.ttf)
+      format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+      U+FE2E-FE2F;
+  }
+@font-face {
+    font-family: "Montserat";
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/Montserrat-Medium.ttf)
+      format("woff2");
+    unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F,
+      U+FE2E-FE2F;
+  }
+
+
+  //MIXINS
+
+  @mixin btn-dark( $var) {
+    background-color: $button-blue ;
+    color: $color-white;
+    @if $var == btn-nav {
+        padding:1.04rem 1.73rem;
+    }
+    @else if $var == btnblue {
+        padding: 1.54rem 3.26rem;
+    }
+    
+}
+
+@mixin btn-ligth( $var) {
+    background-color: $color-white;
+    color: $color-texts;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    @if $var == btnclear {
+        padding:1.54rem 3.5rem ;
+       
+    }
+    @else if $var == btn-cta {
+        padding: 1.35rem 2.95rem;
+    }
+}

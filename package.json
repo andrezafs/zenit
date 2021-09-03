@@ -1,0 +1,12 @@
+{
+  "name": "sitee",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "sass --watch src/scss/styles.scss src/css/styles.css"
+  },
+  "dependencies": {
+    "sass": "^1.39.0"
+  }
+}
