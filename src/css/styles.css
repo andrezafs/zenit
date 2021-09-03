@@ -315,6 +315,7 @@ button:hover {
   padding: 5.6rem 0;
 }
 #coments .coments-container-box {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -325,6 +326,13 @@ button:hover {
   border: 0.1rem solid rgba(69, 88, 128, 0.2);
   border-radius: 0.4rem;
   margin-bottom: 1.6rem;
+}
+#coments .coments-container-box:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+  border: 0.1rem solid #3751FF;
+  background-color: transparent;
+  color: #FFFFFF;
 }
 #coments .coments-container-box p {
   line-height: 3.24rem;

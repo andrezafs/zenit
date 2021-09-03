@@ -187,6 +187,7 @@ button {
         padding: 5.6rem 0;
 
         &-box {
+            cursor: pointer;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -198,6 +199,9 @@ button {
             border-radius: 0.4rem;
             margin-bottom: 1.6rem;
 
+            &:hover {
+                @include hover(ligth);
+            }
             p {
                 line-height: 3.24rem;
             }

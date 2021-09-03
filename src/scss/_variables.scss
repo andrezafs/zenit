@@ -50,6 +50,9 @@ $border: .1rem solid $border-perfil;
     @else if $var == ligth {
       color: $color-white;
     }
+    @else if $var == ligth-cta {
+      border: .1rem solid $colo;
+    }
   }
   
   @mixin btn-dark( $var) {
