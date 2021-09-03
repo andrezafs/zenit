@@ -123,12 +123,18 @@ nav .nav-list {
 nav .nav-list a {
   margin: 0 3rem;
 }
-nav button {
+
+button {
   background-color: #3751FF;
   color: #FFFFFF;
   padding: 1.04rem 1.73rem;
 }
 
+@media screen and (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+}
 #hero {
   display: flex;
   text-align: center;
@@ -302,7 +308,7 @@ nav button {
 }
 
 #cta {
-  background-color: #3751FF;
+  background-color: #3751ff;
 }
 #cta h2 {
   text-align: start;

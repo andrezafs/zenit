@@ -13,13 +13,20 @@ nav {
     .nav-list {
         display: flex;
         align-items: center;
+
         a {
             margin: 0 3rem;
         }
     }
+}
 
-    button {
-        @include btn-dark(btn-nav);
+button {
+    @include btn-dark(btn-nav);
+}
+
+@media screen and (max-width: 999px) {
+    body {
+        overflow-x: hidden;
     }
 }
 
@@ -57,8 +64,7 @@ nav {
     padding: 18rem 0 0 0;
     text-align: center;
     .logos-container {
-      padding: 6.8rem;
-     
+        padding: 6.8rem;
     }
     span {
         font-size: 1.6rem;
@@ -74,10 +80,8 @@ nav {
     }
 
     @media (max-width: 900px) {
-     
         .logos-container {
             padding: 0rem;
-         
         }
         .logos-img {
             flex-wrap: wrap;
@@ -137,7 +141,7 @@ nav {
         &-img {
             margin: 0;
         }
-}
+    }
 }
 #portifolio {
     text-align: center;
@@ -167,7 +171,6 @@ nav {
     button {
         @include btn-dark(btnblue);
     }
- 
 }
 
 #coments {
@@ -176,7 +179,6 @@ nav {
         text-align: center;
     }
     .coments-container {
-    
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
@@ -191,13 +193,13 @@ nav {
             width: 37rem;
             height: 46.7rem;
             border: $border;
-            border-radius: .4rem;
+            border-radius: 0.4rem;
             margin-bottom: 1.6rem;
 
             p {
                 line-height: 3.24rem;
             }
-            .box-elements { 
+            .box-elements {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -206,56 +208,50 @@ nav {
                     margin-top: 2.3rem;
                 }
             }
-
         }
     }
 }
 #cta {
-    background-color: #3751FF;
+    background-color: #3751ff;
     h2 {
         text-align: start;
         color: $color-white;
     }
-  .cta-container {
-    display: flex;
-    align-items: center;
-    height: 32.3rem;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    .cta-container {
+        display: flex;
+        align-items: center;
+        height: 32.3rem;
+        justify-content: space-around;
+        flex-wrap: wrap;
 
-    .btn {
-     
-        margin-bottom: 1.9rem;
-       
-        img {
-            margin-right: 2rem;
-        }
+        .btn {
+            margin-bottom: 1.9rem;
 
-        #btn-cta {
-            align-items: center;
-            display: flex;
-            justify-content: center;
-            @include btn-ligth(btn-cta);
+            img {
+                margin-right: 2rem;
+            }
+
+            #btn-cta {
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                @include btn-ligth(btn-cta);
+            }
         }
-    
-        
+        span {
+            color: $color-white;
+            text-align: right;
+        }
     }
-    span {
-        color: $color-white;
-        text-align: right;
-    }
-  }
-  
 }
 
 #footer {
     margin-top: 12.1rem;
     flex-wrap: wrap;
     #footer-margin {
-        
         border-bottom: $border;
     }
-    p{
+    p {
         margin-top: 3.42rem;
         line-height: 2.6rem;
     }
@@ -264,39 +260,36 @@ nav {
         flex-direction: column;
         padding: 0 16rem;
         flex-wrap: wrap;
-      
+
         &-links {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
-           }
-            li {
-                margin: 3rem 0;
-               }
-       
         }
+        li {
+            margin: 3rem 0;
+        }
+    }
 
-        .column-links {
-            
-                &-sociais {
-                    margin-top: 3.2rem;
-                    img {
-                        margin-right: 2rem;
-                    }
-                }
-            
-        }
-        .terms {
-            align-items: center;
-          padding:  5.3rem 0;
-          a {
-              margin: 0 3rem;
-          }
-        }
-
-        @media (max-width:900px) {
-            .footer-container {
-                padding: 0 2rem;
+    .column-links {
+        &-sociais {
+            margin-top: 3.2rem;
+            img {
+                margin-right: 2rem;
             }
         }
     }
+    .terms {
+        align-items: center;
+        padding: 5.3rem 0;
+        a {
+            margin: 0 3rem;
+        }
+    }
+
+    @media (max-width: 900px) {
+        .footer-container {
+            padding: 0 2rem;
+        }
+    }
+}
