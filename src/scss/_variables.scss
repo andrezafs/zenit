@@ -37,9 +37,20 @@ $border: .1rem solid $border-perfil;
 
   //MIXINS
 
+
+  @mixin hover {
+    transform: scale(1.1);
+    transition: all 0.5s;
+  }
   @mixin btn-dark( $var) {
     background-color: $button-blue ;
     color: $color-white;
+    &:hover {
+      @include hover;
+      background-color: transparent;
+      color: $button-blue;
+      border: .1rem solid $button-blue;
+    }
     @if $var == btn-nav {
         padding:1.04rem 1.73rem;
     }
@@ -53,11 +64,21 @@ $border: .1rem solid $border-perfil;
     background-color: $color-white;
     color: $color-texts;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    &:hover {
+      @include hover;
+      background-color: transparent;
+      border: .1rem solid $button-blue;
+    }
+   
     @if $var == btnclear {
         padding:1.54rem 3.5rem ;
        
     }
     @else if $var == btn-cta {
         padding: 1.35rem 2.95rem;
+        &:hover {
+          color: $color-white;
+          border: .1rem solid $color-white;
+        }
     }
 }

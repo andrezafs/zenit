@@ -13,12 +13,14 @@ nav {
     .nav-list {
         display: flex;
         align-items: center;
-
         a {
             margin: 0 3rem;
+           
+    
         }
     }
 }
+
 
 button {
     @include btn-dark(btn-nav);
