@@ -379,6 +379,9 @@ button {
 #footer .terms a {
   margin: 0 3rem;
 }
+#footer .terms span {
+  color: #45588080;
+}
 @media (max-width: 900px) {
   #footer .footer-container {
     padding: 0 2rem;

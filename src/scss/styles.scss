@@ -255,6 +255,7 @@ button {
         margin-top: 3.42rem;
         line-height: 2.6rem;
     }
+   
     .footer-container {
         display: flex;
         flex-direction: column;
@@ -272,6 +273,7 @@ button {
     }
 
     .column-links {
+      
         &-sociais {
             margin-top: 3.2rem;
             img {
@@ -284,6 +286,9 @@ button {
         padding: 5.3rem 0;
         a {
             margin: 0 3rem;
+        }
+        span {
+            color: $color-span;
         }
     }
 
