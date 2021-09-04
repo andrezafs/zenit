@@ -526,6 +526,7 @@ button:hover {
   font-size: 3.2rem;
   font-weight: bold;
   color: #ffffff;
+  transition: top 250ms;
 }
 .btn-home:hover::after {
   margin-top: -0.8rem;
