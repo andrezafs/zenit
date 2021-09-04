@@ -35,10 +35,21 @@ rigth.reveal(".about-grid", { delay: 50 });
 
 // CARROSSEL 
 
-$('.slider').slick({
-  slidesToShow: 3,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 2000,
-});
-		
+
+// BOTAO TOPO
+window.onscroll = function() { /*  chama a função scroll () que foi criada*/
+  scroll();
+};
+
+function scroll(){
+let btn = document.getElementById("btn-home"); // Pega o Elemento ID do DOM;
+if (document.documentElement.scrollTop > 50){  /* SE o scroll da pagina for maior que 50, o ID passa a ter display: block; */
+   btn.style.display = "fixed"
+}else{
+   btn.style.display = "none"  /* senão terá/continua com display: none;  */
+}
+}
+
+function backToTop(){  /* função para voltar ao TOPO*/
+  document.documentElement.scrollTop = 0;   /* o Scroll volta para 0 depois do clique  */
+}
