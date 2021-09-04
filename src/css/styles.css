@@ -15,6 +15,17 @@
   src: url(../fonts/Montserrat-Medium.ttf) format("woff2");
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
+@keyframes animation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
 *,
 *::before,
 *::after {
@@ -112,6 +123,17 @@ button {
   font-display: swap;
   src: url(../fonts/Montserrat-Medium.ttf) format("woff2");
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+@keyframes animation {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 body {
   max-width: 100%;
@@ -497,6 +519,7 @@ button:hover {
   border-radius: 100%;
   background-color: #3751ff;
   text-decoration: none;
+  animation: animation 5s ease-out infinite;
 }
 .btn-home::after {
   content: "↑";

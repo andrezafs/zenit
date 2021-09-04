@@ -336,6 +336,7 @@ button {
     border-radius: 100%;
     background-color: $button-blue;
     text-decoration: none;
+    animation: animation 5s ease-out infinite;
 
     &::after {
     content: "↑";
@@ -343,6 +344,7 @@ button {
     font-weight: bold;
     color:$color-white;
     transition: top 250ms;
+   
     }
     &:hover::after {
         margin-top:-.8rem;
