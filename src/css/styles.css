@@ -14,7 +14,9 @@
   src: url(../fonts/Montserrat-Medium.ttf) format("woff2");
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
 }
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,7 +30,7 @@ ul {
 
 a {
   position: relative;
-  color: #1E266D;
+  color: #1e266d;
   font-size: 1.6rem;
   text-decoration: none;
   padding: 0 0.1rem;
@@ -39,7 +41,7 @@ a:hover {
 a::after {
   content: "";
   position: absolute;
-  background-color: #3751FF;
+  background-color: #3751ff;
   height: 0.3rem;
   width: 0;
   left: 0;
@@ -51,27 +53,28 @@ a:hover::after {
   width: 100%;
 }
 
-p, span {
+p,
+span {
   font-size: 1.6rem;
   font-weight: 400;
 }
 
 p {
-  color: #1E266D;
+  color: #1e266d;
 }
 
 h1 {
-  color: #1E266D;
+  color: #1e266d;
   font-size: 5.6rem;
 }
 
 h2 {
-  color: #1E266D;
+  color: #1e266d;
   font-size: 4.8rem;
 }
 
 h3 {
-  color: #1E266D;
+  color: #1e266d;
   font-size: 2.2rem;
   font-weight: 500;
 }
@@ -132,6 +135,7 @@ body {
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   height: 8rem;
   justify-content: space-between;
@@ -143,24 +147,32 @@ nav .nav-list {
 nav .nav-list a {
   margin: 0 3rem;
 }
+@media screen and (max-width: 900px) {
+  nav {
+    height: 20rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 
 button {
-  background-color: #3751FF;
-  color: #FFFFFF;
+  background-color: #3751ff;
+  color: #ffffff;
   padding: 1.04rem 1.73rem;
 }
 button:hover {
   transform: scale(1.1);
   transition: all 0.5s;
-  border: 0.1rem solid #3751FF;
+  border: 0.1rem solid #3751ff;
   background-color: transparent;
-  color: #3751FF;
+  color: #3751ff;
 }
 
 #hero {
   display: flex;
   text-align: center;
-  background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #F2F9FF 100%);
+  background: linear-gradient(180deg, rgba(242, 249, 255, 0.12) 0%, #f2f9ff 100%);
   height: 87.8rem;
 }
 #hero img {
@@ -177,22 +189,27 @@ button:hover {
   margin: 1rem 3rem;
 }
 #hero .buttons #blue {
-  background-color: #3751FF;
-  color: #FFFFFF;
+  background-color: #3751ff;
+  color: #ffffff;
   padding: 1.54rem 3.26rem;
 }
 #hero .buttons #blue:hover {
   transform: scale(1.1);
   transition: all 0.5s;
-  border: 0.1rem solid #3751FF;
+  border: 0.1rem solid #3751ff;
   background-color: transparent;
-  color: #3751FF;
+  color: #3751ff;
 }
 #hero .buttons #white {
-  background-color: #FFFFFF;
-  color: #1E266D;
+  background-color: #ffffff;
+  color: #1e266d;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
   padding: 1.54rem 3.5rem;
+}
+@media screen and (max-width: 900px) {
+  #hero h1 {
+    margin-top: 5rem;
+  }
 }
 
 #logos {
@@ -269,7 +286,7 @@ button:hover {
 }
 #portifolio {
   text-align: center;
-  background: #FFF9EA;
+  background: #fff9ea;
 }
 #portifolio .portifolio-container {
   display: flex;
@@ -294,16 +311,16 @@ button:hover {
   width: 100%;
 }
 #portifolio button {
-  background-color: #3751FF;
-  color: #FFFFFF;
+  background-color: #3751ff;
+  color: #ffffff;
   padding: 1.54rem 3.26rem;
 }
 #portifolio button:hover {
   transform: scale(1.1);
   transition: all 0.5s;
-  border: 0.1rem solid #3751FF;
+  border: 0.1rem solid #3751ff;
   background-color: transparent;
-  color: #3751FF;
+  color: #3751ff;
 }
 
 #coments {
@@ -334,9 +351,9 @@ button:hover {
 #coments .coments-container-box:hover {
   transform: scale(1.1);
   transition: all 0.5s;
-  border: 0.1rem solid #3751FF;
+  border: 0.1rem solid #3751ff;
   background-color: transparent;
-  color: #3751FF;
+  color: #3751ff;
 }
 #coments .coments-container-box p {
   line-height: 3.24rem;
@@ -356,7 +373,7 @@ button:hover {
 }
 #cta h2 {
   text-align: start;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 #cta .cta-container {
   display: flex;
@@ -375,22 +392,22 @@ button:hover {
   align-items: center;
   display: flex;
   justify-content: center;
-  background-color: #FFFFFF;
-  color: #1E266D;
+  background-color: #ffffff;
+  color: #1e266d;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
   padding: 1.35rem 2.95rem;
 }
 #cta .cta-container .btn #btn-cta:hover {
   transform: scale(1.1);
   transition: all 0.5s;
-  border: 0.1rem solid #3751FF;
+  border: 0.1rem solid #3751ff;
   background-color: transparent;
-  color: #3751FF;
-  color: #FFFFFF;
-  border: 0.1rem solid #FFFFFF;
+  color: #3751ff;
+  color: #ffffff;
+  border: 0.1rem solid #ffffff;
 }
 #cta .cta-container span {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 #footer {

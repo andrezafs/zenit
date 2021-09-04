@@ -6,9 +6,11 @@ body {
 }
 nav {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     height: 8rem;
     justify-content: space-between;
+
 
     .nav-list {
         display: flex;
@@ -17,6 +19,14 @@ nav {
             margin: 0 3rem;
         }
     }
+    @media screen and (max-width:900px){
+        height: 20rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+}
+
 }
 
 button {
@@ -49,6 +59,12 @@ button {
         }
         #white {
             @include btn-ligth(btnclear);
+        }
+    }
+
+    @media screen and (max-width:900px){ 
+        h1 {
+            margin-top: 5rem;
         }
     }
 }
