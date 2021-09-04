@@ -216,6 +216,11 @@ button:hover {
   padding: 18rem 0 0 0;
   text-align: center;
 }
+@media (max-width: 900px) {
+  #logos {
+    padding: 2rem;
+  }
+}
 #logos .logos-container {
   padding: 6.8rem;
 }
@@ -232,7 +237,7 @@ button:hover {
 }
 @media (max-width: 900px) {
   #logos .logos-container {
-    padding: 0rem;
+    padding: 2rem;
   }
   #logos .logos-img {
     flex-wrap: wrap;

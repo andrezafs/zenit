@@ -72,8 +72,14 @@ button {
 #logos {
     padding: 18rem 0 0 0;
     text-align: center;
+
+    @media (max-width: 900px) {
+        padding: 2rem;
+    }
     .logos-container {
         padding: 6.8rem;
+
+      
     }
     span {
         font-size: 1.6rem;
@@ -90,7 +96,7 @@ button {
 
     @media (max-width: 900px) {
         .logos-container {
-            padding: 0rem;
+            padding: 2rem;
         }
         .logos-img {
             flex-wrap: wrap;
