@@ -19,24 +19,6 @@ a {
     font-size: 1.6rem;
     text-decoration: none;
     padding: 0 0.1rem;
-
-    &:hover {
-        color: $color-span;
-    }
-    &::after {
-        content: "";
-        position: absolute;
-        background-color: $button-blue;
-        height: 0.3rem;
-        width: 0;
-        left: 0;
-        bottom: -0.8rem;
-        transition: 0.3s ease-in;
-    }
-    &:hover::after {
-        color: $color-span;
-        width: 100%;
-    }
 }
 p,
 span {

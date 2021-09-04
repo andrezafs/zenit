@@ -5,16 +5,13 @@ body {
     max-width: 100%;
 }
 nav {
-    display: flex;
+    @include flex (between);
     flex-wrap: wrap;
-    align-items: center;
     height: 8rem;
-    justify-content: space-between;
-
 
     .nav-list {
-        display: flex;
-        align-items: center;
+       @include flex (none);
+       @include aHover;
         a {
             margin: 0 3rem;
         }
@@ -190,6 +187,8 @@ button {
 
 #coments {
     padding: 9.4rem 0;
+
+
     h2 {
         text-align: center;
     }
@@ -199,6 +198,7 @@ button {
         flex-wrap: wrap;
         padding: 5.6rem 0;
 
+     
         &-box {
             cursor: pointer;
             display: flex;
@@ -281,7 +281,7 @@ button {
         flex-direction: column;
         padding: 0 16rem;
         flex-wrap: wrap;
-
+        @include aHover;
         &-links {
             display: flex;
             justify-content: space-between;
@@ -303,6 +303,7 @@ button {
     .terms {
         align-items: center;
         padding: 5.3rem 0;
+     
         a {
             margin: 0 3rem;
         }
@@ -320,5 +321,30 @@ button {
                 flex-direction: column;
             }
         }
+    }
+}
+
+.btn-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 2rem;
+    right: 1rem;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 100%;
+    background-color: $button-blue;
+    text-decoration: none;
+
+    &::after {
+    content: "↑";
+    font-size: 3.2rem;
+    font-weight: bold;
+    color:$color-white;
+    transition: top 250ms;
+    }
+    &:hover::after {
+        margin-top:-.8rem;
     }
 }

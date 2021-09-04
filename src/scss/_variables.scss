@@ -32,6 +32,28 @@ $border: 0.1rem solid $border-perfil;
 
 //MIXINS
 
+@mixin aHover {
+  a {
+    &:hover {
+      color: $color-span;
+  }
+  &::after {
+      content: "";
+      position: absolute;
+      background-color: $button-blue;
+      height: 0.3rem;
+      width: 0;
+      left: 0;
+      bottom: -0.8rem;
+      transition: 0.3s ease-in;
+  }
+  &:hover::after {
+      color: $color-span;
+      width: 100%;
+  }
+}
+}
+
 @mixin hover($var) {
   transform: scale(1.1);
   transition: all 0.5s;
@@ -71,5 +93,22 @@ $border: 0.1rem solid $border-perfil;
     &:hover {
       @include hover(ligth-cta);
     }
+  }
+}
+
+@mixin flex ($var) {
+  display: flex;
+  align-items: center;
+  @if $var == none {
+    justify-content: none;
+  }
+  @if $var == center {
+    justify-content: center;
+  }
+  @else if $var == around {
+    justify-content: space-around;
+  }
+  @else if $var == between {
+    justify-content: space-between;
   }
 }

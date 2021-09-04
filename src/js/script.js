@@ -33,4 +33,12 @@ rigth.reveal(".about-grid", { delay: 50 });
 
 
 
+// CARROSSEL 
 
+$('.slider').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+});
+		

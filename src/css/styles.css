@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Montserat";
   font-style: normal;
@@ -34,23 +35,6 @@ a {
   font-size: 1.6rem;
   text-decoration: none;
   padding: 0 0.1rem;
-}
-a:hover {
-  color: #45588080;
-}
-a::after {
-  content: "";
-  position: absolute;
-  background-color: #3751ff;
-  height: 0.3rem;
-  width: 0;
-  left: 0;
-  bottom: -0.8rem;
-  transition: 0.3s ease-in;
-}
-a:hover::after {
-  color: #45588080;
-  width: 100%;
 }
 
 p,
@@ -135,14 +119,32 @@ body {
 
 nav {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  height: 8rem;
   justify-content: space-between;
+  flex-wrap: wrap;
+  height: 8rem;
 }
 nav .nav-list {
   display: flex;
   align-items: center;
+  justify-content: none;
+}
+nav .nav-list a:hover {
+  color: #45588080;
+}
+nav .nav-list a::after {
+  content: "";
+  position: absolute;
+  background-color: #3751ff;
+  height: 0.3rem;
+  width: 0;
+  left: 0;
+  bottom: -0.8rem;
+  transition: 0.3s ease-in;
+}
+nav .nav-list a:hover::after {
+  color: #45588080;
+  width: 100%;
 }
 nav .nav-list a {
   margin: 0 3rem;
@@ -432,6 +434,23 @@ button:hover {
   padding: 0 16rem;
   flex-wrap: wrap;
 }
+#footer .footer-container a:hover {
+  color: #45588080;
+}
+#footer .footer-container a::after {
+  content: "";
+  position: absolute;
+  background-color: #3751ff;
+  height: 0.3rem;
+  width: 0;
+  left: 0;
+  bottom: -0.8rem;
+  transition: 0.3s ease-in;
+}
+#footer .footer-container a:hover::after {
+  color: #45588080;
+  width: 100%;
+}
 #footer .footer-container-links {
   display: flex;
   justify-content: space-between;
@@ -464,6 +483,30 @@ button:hover {
     display: flex;
     flex-direction: column;
   }
+}
+
+.btn-home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 2rem;
+  right: 1rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 100%;
+  background-color: #3751ff;
+  text-decoration: none;
+}
+.btn-home::after {
+  content: "↑";
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: #ffffff;
+  transition: top 250ms;
+}
+.btn-home:hover::after {
+  margin-top: -0.8rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
