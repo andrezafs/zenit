@@ -10,7 +10,7 @@ header.reveal("#about", { delay: 50 });
 header.reveal(".img", { delay: 30 });
 header.reveal("#portifolio", { delay: 50 });
 header.reveal("#coments", { delay: 50 });
-header.reveal(".coments-container-box", { delay: 80 });
+
 header.reveal("#cta", { delay: 50 });
 header.reveal("#footer", { delay: 50 });
 
@@ -37,3 +37,8 @@ rigth.reveal(".about-grid", { delay: 50 });
 
 
 // BOTAO TOPO
+
+scroll({
+  top:0,
+  behavior: "smooth"
+});
